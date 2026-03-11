@@ -1,5 +1,11 @@
 # Screenshots
 
+
+#Architecture Diagram- Metaverse IAM 
+
+<img width="940" height="292" alt="image" src="https://github.com/user-attachments/assets/dde97d91-ab01-49d9-bd9e-82b7ac90e699" />
+
+
 ## Figure 1
 **Metaverse IAM Lab virtual machine environment overview**  
 
