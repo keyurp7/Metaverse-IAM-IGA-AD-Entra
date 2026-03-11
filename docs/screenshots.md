@@ -38,7 +38,8 @@ Shows governance-driving identity attributes sourced from AD.
 ## Figure 5A
 **SailPoint AD connector configuration for identity aggregation and provisioning** 
 
-<img width="940" height="387" alt="image" src="https://github.com/user-attachments/assets/0aadd27f-588a-4a9b-a843-55e1c26b7229" />
+<img width="1916" height="788" alt="Screenshot 2026-03-11 023130" src="https://github.com/user-attachments/assets/23c29402-8dd0-47e9-9fcd-ad6186d172ea" />
+
 
 ## Figure 5B
 <img width="940" height="619" alt="image" src="https://github.com/user-attachments/assets/90ff8001-b8b6-4f74-9585-7e912b5f76ef" />
@@ -98,7 +99,7 @@ Shows workgroups supporting delegated governance.
 ## Figure 12-15
 **Hybrid identity and cloud visibility**  
 
-<img width="940" height="563" alt="image" src="https://github.com/user-attachments/assets/7776933b-cf19-4862-8ef8-68c99a333140" />
+<img width="1411" height="845" alt="Screenshot 2026-03-11 032514" src="https://github.com/user-attachments/assets/029374d6-b4ce-45ed-aa0d-dd002f908e9e" />
 
 <img width="940" height="447" alt="image" src="https://github.com/user-attachments/assets/66b84d97-b907-41a7-83d2-a1df75193cc7" />
 
