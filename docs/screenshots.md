@@ -150,6 +150,8 @@ Figure 5: Server runtime and service validation across the IAM platform
 Figure 19: Provisioning engine result showing committed role and group updates
 
 <img width="940" height="722" alt="image" src="https://github.com/user-attachments/assets/ec2ae41b-0acb-4dc9-9e66-dbed22099e9d" />
+
+
 Figure 20: Active Directory group membership validation after provisioning
 
 
