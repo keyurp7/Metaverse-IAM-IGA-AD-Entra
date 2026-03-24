@@ -1,0 +1,52 @@
+# ─── OS generated files ───
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ─── Editor / IDE ───
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ─── Java / Tomcat artifacts ───
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+out/
+
+# ─── Logs ───
+*.log
+logs/
+
+# ─── Secrets & credentials ───
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
+
+# ─── Python (if scripts are added) ───
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ─── Miscellaneous ───
+*.bak
+*.tmp
+*.temp
+node_modules/

@@ -1,0 +1,20 @@
+# CODEOWNERS — defines who reviews changes to critical files
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+* @keyurp7
+
+# Architecture and security-critical documentation
+docs/architecture.md @keyurp7
+docs/validation.md @keyurp7
+SECURITY.md @keyurp7
+
+# Repository configuration
+.github/ @keyurp7
+.gitignore @keyurp7
+.editorconfig @keyurp7
+
+# Core documentation
+README.md @keyurp7
+ROADMAP.md @keyurp7
+CHANGELOG.md @keyurp7

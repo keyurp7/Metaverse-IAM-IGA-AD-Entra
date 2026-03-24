@@ -1,0 +1,19 @@
+# Dependabot configuration
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+  # Monitor GitHub Actions for security updates
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    assignees:
+      - "keyurp7"
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
+      - "security"
+    open-pull-requests-limit: 5

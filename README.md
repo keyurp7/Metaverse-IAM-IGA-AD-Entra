@@ -1,126 +1,232 @@
-# Metaverse-IAM-IGA-AD-Entra
+<div align="center">
 
-The Metaverse IAM Lab is a production-inspired Identity and Access Management environment built to demonstrate enterprise-grade capability across IAM systems architecture, identity governance engineering, access automation, platform support, and operational troubleshooting.
+# Metaverse IAM Lab
 
-# Stack
+**Enterprise Identity Governance & Hybrid Identity Environment**
 
-- *Active Directory** as the on-prem source of truth
-- *SailPoint IdentityIQ** as the identity governance platform
-- *Microsoft Entra ID** as the cloud identity layer
-- *AD Connect / Microsoft Entra Connect** for hybrid identity sync
-- *Java and Apache Tomcat** installed locally on the IIQ server
+A production-inspired Identity and Access Management environment built to demonstrate enterprise-grade capability across IAM systems architecture, identity governance engineering, access automation, platform support, and operational troubleshooting.
 
-# Overview
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/keyurp7/Metaverse-IAM-IGA-AD-Entra-Project)](https://github.com/keyurp7/Metaverse-IAM-IGA-AD-Entra-Project/commits/main)
+[![GitHub stars](https://img.shields.io/github/stars/keyurp7/Metaverse-IAM-IGA-AD-Entra-Project?style=social)](https://github.com/keyurp7/Metaverse-IAM-IGA-AD-Entra-Project/stargazers)
+[![GitHub repo size](https://img.shields.io/github/repo-size/keyurp7/Metaverse-IAM-IGA-AD-Entra-Project)](https://github.com/keyurp7/Metaverse-IAM-IGA-AD-Entra-Project)
+
+[Documentation](#-documentation) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Report an Issue](../../issues/new/choose)
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [Stack](#-stack)
+- [Overview](#-overview)
+- [Architecture](#-architecture)
+- [Key Areas](#-key-areas)
+- [End-to-End Validation](#-end-to-end-validation)
+- [Documentation](#-documentation)
+- [Skills Demonstrated](#-skills-demonstrated)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [Security](#-security)
+- [Author](#-author)
+
+---
+
+## 🛠 Stack
+
+| Technology | Role |
+|---|---|
+| **Active Directory** | On-prem source of truth |
+| **SailPoint IdentityIQ** | Identity governance platform |
+| **Microsoft Entra ID** | Cloud identity layer |
+| **AD Connect / Entra Connect** | Hybrid identity sync |
+| **Java & Apache Tomcat** | IIQ server runtime |
+
+---
+
+## 📖 Overview
 
 This lab was built to reflect real enterprise IAM processes, not just product setup. It covers:
 
-- source-of-truth driven identity governance
-- joiner, mover, and leaver automation
-- role-based access control and business role design
-- workgroup ownership and access accountability
-- hybrid identity sync from AD to Entra ID
-- server runtime validation and connector support
-- troubleshooting across LDAP, LDAPS, certificates, Tomcat, and platform behavior
-- end-to-end access request and provisioning validation
+- Source-of-truth driven identity governance
+- Joiner, Mover, and Leaver automation
+- Role-based access control and business role design
+- Workgroup ownership and access accountability
+- Hybrid identity sync from AD to Entra ID
+- Server runtime validation and connector support
+- Troubleshooting across LDAP, LDAPS, certificates, Tomcat, and platform behaviour
+- End-to-end access request and provisioning validation
 
-# Architecture
+---
 
-# On-Prem Identity Source
+## 🏗 Architecture
 
+### Architecture Diagram
+
+<img width="2392" height="742" alt="Metaverse IAM Architecture diagram" src="https://github.com/user-attachments/assets/b2c830ea-c202-482c-9888-aa04db055b92" />
+
+### On-Prem Identity Source
 - Active Directory hosted on Windows Server VMs
 - OU structure for users, workstations, helpdesk, and governed identity containers
-- identity attributes such as department and employeeType used in governance logic
+- Identity attributes such as `department` and `employeeType` used in governance logic
 
-# Identity Governance Layer
+### Identity Governance Layer
 - SailPoint IdentityIQ hosted on a dedicated VM
 - Java and Apache Tomcat installed locally on the IIQ server
 - AD onboarding, aggregation, identity mapping, provisioning, lifecycle events, workgroups, and role design
 
-# Hybrid Identity Layer
+### Hybrid Identity Layer
 - AD Connect / Microsoft Entra Connect hosted on a dedicated VM
-- sync from on-prem AD into Microsoft Entra ID via AD Connect
+- Sync from on-prem AD into Microsoft Entra ID via AD Connect
 
-# Cloud Identity Layer
+### Cloud Identity Layer
 - Microsoft Entra ID for synced users, groups, and cloud identity visibility
 
-# Architecture Diagram
+---
 
-<img width="2392" height="742" alt="Metaverse IAM Architecture diagram" src="https://github.com/user-attachments/assets/b2c830ea-c202-482c-9888-aa04db055b92" />
+## 🔑 Key Areas
 
-
-# Key Areas
-
-# Identity Governance
+### Identity Governance
 - AD as source of truth
-- identity mapping in SailPoint IIQ
+- Identity mapping in SailPoint IIQ
 - AD connector configuration and provisioning integration
-- entitlement and role visibility
-- workgroup ownership and governance accountability
+- Entitlement and role visibility
+- Workgroup ownership and governance accountability
 
-# JML Automation
+### JML Automation
 - Joiner, Mover, and Leaver lifecycle events
-- business process workflow design for JML
-- attribute-driven access logic using department and employeeType
-- birthright and role-based provisioning
+- Business process workflow design for JML
+- Attribute-driven access logic using `department` and `employeeType`
+- Birthright and role-based provisioning
 
-# Access Governance
-- business roles aligned to departments
-- birthright-style access design
-- delegated governance through workgroups and ownership
-- controlled access request and provisioning process
+### Access Governance
+- Business roles aligned to departments
+- Birthright-style access design
+- Delegated governance through workgroups and ownership
+- Controlled access request and provisioning process
 
-# Hybrid Identity
-- on-prem AD sync into Entra ID through AD Connect
-- synced users and groups visible in Microsoft Entra ID
+### Hybrid Identity
+- On-prem AD sync into Entra ID through AD Connect
+- Synced users and groups visible in Microsoft Entra ID
 - Entra Connect health validation and sync troubleshooting
 
-# Platform Support and Troubleshooting
+### Platform Support & Troubleshooting
 - LDAP and LDAPS validation
-- certificate and Java truststore troubleshooting
+- Certificate and Java truststore troubleshooting
 - SailPoint connector debugging
 - Tomcat runtime and application hosting validation
 - HTTP 405 platform issue investigation
-- final validation through successful task execution and provisioning results
+- Final validation through successful task execution and provisioning results
 
-# End-to-End Validation
+---
+
+## ✅ End-to-End Validation
 
 A full governed access flow was validated for a test identity:
 
-1. access request initiated in SailPoint IdentityIQ
-2. business role selection and submission
-3. request approval and provisioning completion
-4. provisioning engine execution
+1. Access request initiated in SailPoint IdentityIQ
+2. Business role selection and submission
+3. Request approval and provisioning completion
+4. Provisioning engine execution
 5. AD group membership updated after provisioning
 
+> For detailed validation evidence, see [docs/validation.md](docs/validation.md).
 
-# Documentation
+---
 
-- [Architecture](docs/architecture.md)
-- [Implementation](docs/implementation.md)
-- [Screenshots](docs/screenshots.md)
-- [Troubleshooting](docs/troubleshooting.md)
-- [Validation](docs/validation.md)
-- [Lessons Learned](docs/lessons-learned.md)
+## 📚 Documentation
 
-# Skills Demonstrated
+| Document | Description |
+|---|---|
+| [Architecture](docs/architecture.md) | System layers and identity flow |
+| [Implementation](docs/implementation.md) | Environment build and SailPoint configuration |
+| [Screenshots](docs/screenshots.md) | Annotated evidence across all layers |
+| [Troubleshooting](docs/troubleshooting.md) | LDAP, certs, connectors, Tomcat debugging |
+| [Validation](docs/validation.md) | End-to-end access flow validation |
+| [Lessons Learned](docs/lessons-learned.md) | Key takeaways from building the lab |
 
-- Identity and Access Management
-- Identity Governance and Administration
-- SailPoint IdentityIQ
-- Active Directory
-- Microsoft Entra ID
-- AD Connect / Entra Connect
-- JML Automation
-- Role-Based Access Control
-- Access Provisioning
-- Workflow and Lifecycle Events
-- Hybrid Identity
-- LDAP and LDAPS Troubleshooting
-- Certificates and Java Truststore Validation
-- Tomcat Application Hosting
-- Platform Support and Debugging
+---
 
+## 🧠 Skills Demonstrated
 
-# Author
-  KP  
-IAM Engineer
+<table>
+  <tr>
+    <td>Identity and Access Management</td>
+    <td>Identity Governance and Administration</td>
+    <td>SailPoint IdentityIQ</td>
+  </tr>
+  <tr>
+    <td>Active Directory</td>
+    <td>Microsoft Entra ID</td>
+    <td>AD Connect / Entra Connect</td>
+  </tr>
+  <tr>
+    <td>JML Automation</td>
+    <td>Role-Based Access Control</td>
+    <td>Access Provisioning</td>
+  </tr>
+  <tr>
+    <td>Workflow & Lifecycle Events</td>
+    <td>Hybrid Identity</td>
+    <td>LDAP & LDAPS Troubleshooting</td>
+  </tr>
+  <tr>
+    <td>Certificates & Java Truststore</td>
+    <td>Tomcat Application Hosting</td>
+    <td>Platform Support & Debugging</td>
+  </tr>
+</table>
+
+---
+
+## 🗺 Roadmap
+
+This project is actively evolving. Planned enhancements include SoD policies, certification campaigns, Okta integration, SIEM/PAM integration, and Zero Trust alignment.
+
+👉 **[View the full Roadmap](ROADMAP.md)**
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and feedback are welcome. Whether it's a typo fix, a new lab scenario, or an architectural improvement — all input is valued.
+
+👉 **[Read the Contributing Guide](CONTRIBUTING.md)**
+
+---
+
+## 🔒 Security
+
+This is a lab environment — no production data or real credentials are involved. For security-related concerns about the repository itself, please see the security policy.
+
+👉 **[Read the Security Policy](SECURITY.md)**
+
+---
+
+## 📝 Changelog
+
+Track all changes, additions, and releases in the changelog.
+
+👉 **[View the Changelog](CHANGELOG.md)**
+
+---
+
+## 👤 Author
+
+**Keyur Purohit**
+IAM Engineer · Melbourne, Australia
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/keyur-purohit)
+[![Portfolio](https://img.shields.io/badge/Portfolio-keyurpurohitIAM-orange?style=flat&logo=google-chrome)](https://keyurp7.github.io/keyurpurohitIAM/)
+[![Email](https://img.shields.io/badge/Email-Keyur__7%40outlook.com-red?style=flat&logo=microsoft-outlook)](mailto:Keyur_7@outlook.com)
+
+---
+
+<div align="center">
+
+**If you find this project useful, consider giving it a ⭐**
+
+It helps others discover it and motivates continued development.
+
+</div>
